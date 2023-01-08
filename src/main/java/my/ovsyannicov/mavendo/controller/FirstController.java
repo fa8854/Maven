@@ -11,8 +11,11 @@ public class FirstController {
         return "Приложение запущенно";
     }
 
-    @GetMapping
-    public String appStart(""){
-        return "Приложение запущенно";
+    @GetMapping("/info")
+    public String appInfo(){
+        return "Имя учиника : Денис " +
+                " ,название вашего проекта : MavenDO " +
+                " ,дата создания : 08.01.2023  " +
+                " ,описание проекта в свободной форме : Домашнее задание по Maven";
     }
 }
